@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Control Conecta</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="account">miguel@conectaconsultores.es</string>
+    <string name="calendar">Acuaciones</string>
+
+    <string name="action_about">Acerca de ...</string>
+
+    <string name="navtx_camera">Importar</string>
+    <string name="navtx_gallery">Galeria</string>
+    <string name="navtx_slideshow">Diapositivas</string>
+    <string name="navtx_manage">Ajustes</string>
+    <string name="navtx_comunication">Comunicacion</string>
+    <string name="navtx_share">Compartir</string>
+    <string name="navtx_send">Enviar</string>
+
+    <string-array name="tipo_orden">
+        <item></item>
+        <item>MOVISTAR FTTH</item>
+        <item>MOVISTAR NEBA</item>
+        <item>MOVISTAR OBA</item>
+        <item>VODAFONE TOA</item>
+        <item>VODAFONE NEBA</item>
+        <item>VODAFONE PICO</item>
+        <item>JAZZTEL</item>
+        <item>ORANGE</item>
+        <item>SERMICRO</item>
+    </string-array>
+
+</resources>

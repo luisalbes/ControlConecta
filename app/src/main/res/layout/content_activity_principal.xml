@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="es.conectaconsultores.controlconecta.ActivityPrincipal"
+    tools:showIn="@layout/app_bar_activity_principal">
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_titulo"
+        android:layout_below="@+id/spinner_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/edit_entrada"
+        android:hint="Numero de Orden" />
+
+    <LinearLayout
+        android:id="@+id/view_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_titulo">
+        <EditText
+            android:id="@+id/edit_entrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:inputType="time"
+            android:nextFocusDown="@+id/edit_salida"
+            android:hint="Hora Entrada"/>
+        <EditText
+            android:id="@+id/edit_salida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:inputType="time"
+            android:nextFocusDown="@+id/edit_descripcion"
+            android:hint="Hora Salida"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_descripcion"
+        android:layout_below="@+id/view_time"
+        android:layout_above="@+id/view_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:hint="Descripcion"/>
+
+    <LinearLayout
+        android:id="@+id/view_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Enviar" />
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_borrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Borrar" />
+    </LinearLayout>
+
+
+</RelativeLayout>
